@@ -104,7 +104,6 @@ def register():
     last_name = request.form['last_name']
     salt, key = hash_password(password)
     update_passwords(username, key, salt)
-    # add user to database
     db.insert_user(username, key, email, first_name, last_name)
     return render_template('index.html')
 
@@ -129,7 +128,6 @@ def checkout():
         print(f"item ID: {item['id']}")
         if request.form[str(item['id'])] > '0':
             count = request.form[str(item['id'])]
-            # print(f"request form quantity: {request.form[str(item['id'])]}")
             order[item['item_name']] = count
             user_session.add_new_item(
                 item['id'], item['item_name'], item['price'], count)
