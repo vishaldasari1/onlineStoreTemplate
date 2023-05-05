@@ -15,7 +15,9 @@ When a change is made to the document, a new revision should be created. The rev
 | Version | Date | Description | Author | Reviewed By |
 | --- | --- | --- | --- | --- |
 | 1.0 | 03/22/23 | Initial draft | [David Gary](mailto:dgary9@uncc.edu) | [David Gary](mailto:dgary@uncc.edu) |
-| 1.1 | 03/23/23 | Added Name    | [Vishal Dasari](mailto:vdasari1@uncc.edu) | [Vishal Dasari](mailto:vdasari1@uncc.edu) |
+| 1.1 | 04/23/23 | Added Name    | [Vishal Dasari](mailto:vdasari1@uncc.edu) | [Vishal Dasari](mailto:vdasari1@uncc.edu) |
+| 1.2 | 05/2/23 | Worked on Table of Contents (1-3)    | [Vishal Dasari](mailto:vdasari1@uncc.edu) | [Vishal Dasari](mailto:vdasari1@uncc.edu) |
+| 1.3 | 05/5/23 | Worked on Table of Contents (4-6)    | [Vishal Dasari](mailto:vdasari1@uncc.edu) | [Vishal Dasari](mailto:vdasari1@uncc.edu) |
 
 ## Table of Contents
 
@@ -27,51 +29,176 @@ When a change is made to the document, a new revision should be created. The rev
 6. [Glossary](#glossary)
 
 ## Introduction
-
 In this section, you should give a brief overview of what your project will be. Describe the software system you are building and what problems it solves. You should also give a short description of the stakeholders (users of the system) and what their needs are. There is no set formatting requirement, but you should maintain a consistent structure across future sections. Not all members must contribute to this section.
+
+The software system that I will be building is an online gaming store.  The program would display an image of the games a user could buy or rent.  Stakeholders would be the users who would like to buy/rent the video games out.  The stakeholder's needs would be the item that they would like to acquire.
 
 ## Requirements
 
 Each group member must supply at least three functional requirements for the project. Each requirement should be written in the following format:
 
-* **ID:** A unique identifier for the requirement. This should be a number that is unique across the entire document (something like REQ-1, REQ-2, etc. but be sure to replace the word `ID` with the unique identifier).
-  * **Description:** A short description of the requirement. This should be a single sentence that describes the requirement. Do not replace the word `Description` with the actual description. Put the description in the space where these instructions are written. Maintain that practice for all future sections.
-  * **Type:** The type of requirement. Should be either `Functional` or `Non-Functional`.
-  * **Priority:** The priority of the requirement. This should be a number between 1 and 5, with 1 being the highest priority and 5 being the lowest priority.
-  * **Rationale:** A short description of why the requirement is important. This should be a single sentence that describes why the requirement is important.
-  * **Testing:** A short description of how the requirement can be tested. This should be a single sentence that describes how the requirement can be tested.
-* **ID:** A unique identifier for the requirement. This should be a number that is unique across the entire document (something like REQ-1, REQ-2, etc. but be sure to replace the word `ID` with the unique identifier).
-  * **Description:** A short description of the requirement. This should be a single sentence that describes the requirement.
-  * **Type:** The type of requirement. Should be either `Functional` or `Non-Functional`.
-  * **Priority:** The priority of the requirement. This should be a number between 1 and 5, with 1 being the highest priority and 5 being the lowest priority.
-  * **Rationale:** A short description of why the requirement is important. This should be a single sentence that describes why the requirement is important.
-  * **Testing:** A short description of how the requirement can be tested. This should be a single sentence that describes how the requirement can be tested.
+**REQ-1:** Allow users to create an account and login.
+  * **Description:** To access an existing user information.
+  * **Type:** Functional
+  * **Priority:** 1 
+  * **Rationale:** Users need an account to purchase/rent games and access their saved games.
+  * **Testing:** Ensure the username and the password matches with our server
+* **REQ-2:** Creating New Account
+  * **Description:** To have access to the respected user's page.
+  * **Type:** Functional
+  * **Priority:** 1
+  * **Rationale:** Needed to access user's account
+  * **Testing:** Create an account and verify that login works as expected.
+* **REQ-3: Display a list of available games for purchase/rental**
+  * **Description: User will be able to look at the latest updates games available**
+  * **Type:** Functional
+  * **Priority:** 1
+  * **Rationale:** This is the core functionality of the system.
+  * **Testing:** Ensure that the list of games displayed is accurate and up-to-date.
+* **REQ-4: Allow users to add game(s) to the shopping cart**
+  * **Description: To have access to adding games to your shopping cart.
+  * **Type:** Functional. 
+  * **Priority:** 1
+  * **Rationale:** Users may want to save games for later or purchase multiple games at once.
+  * **Testing:**  Add a game to the cart/wish list and verify that it is displayed in the appropriate section.
+* **REQ-5**: Allow users to filter games based on genre.
+  * **Description:** User will be able to filter thorugh different genres.
+  * **Type:** Functional
+  * **Priority:** 2
+  * **Rationale:** Users may want to browse games within a specific genre.
+  * **Testing:** Check if the filter displays only games that match the selected genre.
+* **REQ-6**: Allow users to search for games by title or keyword.
+  * **Description**: Displays current book info
+  * **Type:** Functional
+  * **Priority:** 2
+  * **Rationale:** Users may want to search for specific games they have in mind.
+  * **Testing:** Search for a known game title and verify that it is displayed in the search results.
+* **REQ-7** Display game details such as title, description, release date, and rating.
+  * **Description:** Allows users to learn more about the game, ratings, and price etc.
+  * **Type:** Functional
+  * **Priority:** 2
+  * **Rationale:** Users need to know more about a game before deciding to purchase/rent it.
+  * **Testing:** Verify that game details displayed are accurate and match the selected game.
+* **REQ-8** Allow users to view their order history.
+  * **Description:** Displays user's order history.
+  * **Type:** Fuctional
+  * **Priority:** 2
+  * **Rationale:** Users may want to view past purchases or rentals.
+  * **Testing:** Verify that the order history displays accurate information about past purchases/rentals.
+* **REQ-9** Rate/Review games.
+  * **Description:** Allow users to rate and review games.
+  * **Type:** Functional
+  * **Priority:** 3
+  * **Rationale:** User reviews and ratings can help other users make informed decisions.
+  * **Testing:** Verify that users can rate and review games, and that the ratings and reviews are displayed correctly.
+* **REQ-10** Provide customer support and contact information
+  * **Description:** Provides customer support and contact information to the user
+  * **Type:** Functional
+  * **Priority:** 4
+  * **Rationale:** Users may need help with purchasing or rental issues.
+  * **Testing:** 	Verify that the customer support and contact information is accurate and up-to-date.
+* **REQ-11** Shipping Information
+  * **Description:** Asks user to enter your shipping information.
+  * **Type:** Functional
+  * **Priority:** 4
+  * **Rationale:** Users will get this option at the time of the payment.
+  * **Testing:** Enter the shiping information and see that it shows in the system.
+* **REQ-12** Payment Method/Information
+  * **Description:** Asks the user for their payment information.
+  * **Type:** `Functional`
+  * **Priority:** 4
+  * **Rationale:** It is one of the last steps for buying a game.
+  * **Testing:** Verify the payment information in the system.
 
 ## Constraints
 
 In this section, you should list any constraints that you have for the project. Each group member must supply at least two constraints. These can be constraints on the project itself, the software system, or the stakeholders. Constraints can be anything that limits the scope of the project. For example, that this project's template code is written using Flask and Python constitutes a constraint on the backend of the project. Constraints can also be things like the required timeline of the project. Be creative.
 
+* **Constraint 1:**
+I am able to use either python, html, javascript, or flask only.
+* **Constraint 2:**
+I am working alone in this project
+* **Constraint 3:**
+No discussion or guidance from my groupmates for any cross-reference.
+* **Constraint 4:**
+The website should not crash
+* **Constraint 5:**
+The entire project should be finished within last day of final project submission.
+
 ## Use Cases
 
 In this section, you should list use cases for the project. Use cases are a thorough description of how the system will be used. Each group member must supply at least two use cases. Each use case should be written in the following format:
 
-* **ID:** A unique identifier for the use case. This should be a number that is unique across the entire document (something like UC-1, UC-2, etc. but be sure to replace the word `ID` with the unique identifier).
-  * **Description:** A description of the use case that gives the user a high-level overview of how the system is interacted with.
-  * **Actors:** A list of the actors that are involved in the use case. Only include the actors that are directly involved. Actors are the people or things that interact with the system. For example, when ordering at a fast food restaurant, one might have the following actors: the customer, the cashier, and the cook. But only the customer and the cashier are directly involved in the use case of ordering food. The cook is not directly involved in the use case of ordering food.
-  * **Preconditions:** A list of the preconditions for the use case. This should be a list of the preconditions for the use case, which are the conditions that must be met before the use case can be executed. Continuing with the restaurant example, the customer must have money in their wallet and the cashier must be logged in to the system before the use case of ordering food can be executed.
-  * **Postconditions:** A list of the postconditions for the use case. This should be a list of the postconditions for the use case, which are the conditions that must be met after the use case has been executed. Continuing with the restaurant example, the customer must have their food and the cashier must have the customer's money after the use case of ordering food has been executed.
+* **UC-1:** User Account Creation
+  * **Description:** A new user creates an account to access the system.
+  * **Actors:** User
+  * **Preconditions:**  None
+  * **Postconditions:** The user has successfully created an account and can log in to the system.
+* **UC-2:** User Login
+  * **Description:** An existing user logs into their account to access the system.
+  * **Actors:** User
+  * **Preconditions:** The user must have already created an account.
+  * **Postconditions:** The user has successfully logged in and can access their account page.
+* **UC-3:** Browse Games
+  * **Description:** A user browses through the available games on the system.
+  * **Actors:** User
+  * **Preconditions:** The user must be logged in.
+  * **Postconditions:** The user has browsed through the available games and can view more details about a specific game.
+* **UC-4:** Purchase/Rent Game
+  * **Description:** A user purchases or rents a game.
+  * **Actors:** User
+  * **Preconditions:** The user must be logged in and have selected a game to purchase or rent.
+  * **Postconditions:** The user has successfully purchased or rented a game and can access it in their account.
+* **UC-5:** View Order History
+  * **Description:** A user views their order history.  
+  * **Actors:** User
+  * **Preconditions:** The user must be logged in and have made previous purchases/rentals.
+  * **Postconditions:** The user has successfully viewed their order history.
+* **UC-6:** Provide Customer Support
+  * **Description:** A user contacts customer support for assistance.
+  * **Actors:** User, Customer Support Representative
+  * **Preconditions:** The user must be logged in and have an issue that requires assistance.
+  * **Postconditions:** The user's issue is resolved or a solution is provided to the user.
+* **UC-7:** Enter Shipping Information
+  * **Description:** User enters shipping information during the checkout process.
+  * **Actors:** User
+  * **Preconditions:** User has selected the game they wish to purchase and has proceeded to the checkout process.
+  * **Postconditions:** User's shipping information is saved in the system and is displayed on the order confirmation page.
+ * **UC-8:** Enter Payment Information
+  * **Description:** User enters payment information during the checkout process.
+  * **Actors:** User
+  * **Preconditions:** User has selected the game they wish to purchase, has entered their shipping information, and has proceeded to the payment section of the checkout process.
+  * **Postconditions:** User's payment information is saved in the system, the payment is processed, and the user is redirected to the order confirmation page.
 
 ## User Stories
 
 In this section, you should list user stories for the project. User stories are a short description of how a user will be interacting with the system. Each group member must supply at least two user stories. Each user story should be written in the following format:
 
-* **ID:** A unique identifier for the user story. This should be a number that is unique across the entire document (something like US-1, US-2, etc. but be sure to replace the word `ID` with the unique identifier).
-  * **Type of User:** The type of user that the user story is for. This should be a single word that describes the type of user. For example, a user story for a customer might be `Customer` and a user story for an administrator might be `Admin`.
-  * **Description:** A description of the user story that gives a narrative from that user's perspective. This can be any length, but it must paint the picture of what the user wants to do, how they intend to do it, why they want to, and what they expect to happen.
+* **US-1:**
+  * **Type of User:** Customer
+  * **Description:** As a customer, I want to be able to filter games by genre so that I can find games that fit my interests easily. I expect to see a list of games that match my chosen genre.
+* **US-2:** 
+  * **Type of User:** Customer
+  * **Description:** As a customer, I want to be able to search for games by title so that I can find a specific game I'm interested in. I expect to be able to see the game's details once I've found it.
+* **US-3:** 
+  * **Type of User:** Customer
+  * **Description:** As a customer, I want to be able to see the system requirements for a game so that I can determine if my computer can run it. I expect to see a clear list of minimum and recommended requirements.
+* **US-4:** 
+  * **Type of User:** Customer
+  * **Description:** As a customer, I want to be able to read reviews and ratings from other users before deciding to purchase or rent a game. I expect to see an overall rating and a selection of reviews.
+* **US-5:** 
+  * **Type of User:** Customer
+  * **Description:** As a customer, I want to be able to see my cart's contents at all times and the total cost so that I can keep track of my purchases. I expect to be able to easily remove items from my cart if needed.
 
 ## Glossary
 
 In this section, you should list any terms that are used in the document that may not be immediately obvious to a naive reader. Each group member must supply at least one term. Each term should be written in the following format:
 
-* **Term:** The term that is being defined. This should be a single word or phrase that is being defined.
-  * **Definition:** A definition of the term. This should be a short description of the term that is being defined. This should be a single sentence that describes the term.
+* **Term:** User
+  * **Definition:** A person who interacts with the system to browse and purchase games.
+* **Term:** Account
+  * **Definition:** A user's personal profile in the system that contains their personal information and order history.
+* **Term:** Checkout Process
+  * **Definition:** The series of steps that a user must follow to complete a purchase or rental of a game, including entering shipping and payment information.
+* **Term:** Customer Support Representative
+  * **Definition:** An individual who assists users in resolving issues and answering questions related to the system
